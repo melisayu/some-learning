@@ -1,0 +1,11 @@
+Berikut ini adalah definisi tentang operasi penggeseran (shift) terhadap suatu string.
+- Geser Kiri: Mengubah urutan karakter pada suatu string dengan cara menggeser satu huruf ke sebelah kiri, dimana huruf pertama akan menjadi huruf terakhir. Contohnya abcde akan menjadi bcdea setelah melalui satu kali proses geser-kiri, dan akan menjadi cdeab setelah melalui dua kali proses geser-kiri.
+- Geser Kanan: Mengubah urutan karakter pada suatu string dengan cara menggeser satu huruf ke sebelah kanan, dimana huruf terakhir akan menjadi huruf pertama. Contohnya abcde akan menjadi eabcd setelah melalui satu kali proses geser-kanan, dan akan menjadi deabc setelah melalui dua kali proses geser-kanan.
+
+Sample input:
+abcd (string)
+1 (geserKiri)
+2 (geserKanan)
+
+Sample output:
+dabc

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="/notes-icon.png" rel="icon">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class ="header">
+            <div class="container">
+                <h1 class="header_title">Notes App</h1>
+                <h2 class="header_subtitle"=>Take notes and never forget again</h2>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="actions_container"></div>
+        </div>
+        <div class="container">
+            <input id="note-title" class="title-input" placeholder="Note title">
+            <textarea id="note-body" class="body-input" placeholder="Enter note text"></textarea>
+            <button id="home" class="button">Home</button>
+            <button id="remove-note" class="button button-secondary">Remove Note</button>
+            <span id="last-edited"></span>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+        <script src="notes-functions.js"></script>
+        <script src="note-edit.js"></script>
+    </body>
+</html>

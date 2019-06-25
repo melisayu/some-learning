@@ -1,0 +1,170 @@
+/* Header */
+
+.header {
+  background: #CEA037;
+  color: white;
+  padding: 30px;
+}
+
+.header_title {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.header_subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+    color: #396684;
+}
+
+/* Container */
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+/* Actions Bar */
+
+.actions {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #dedfe0;
+    padding: 8px
+}
+
+.actions_container {
+    align-items: center;
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 30px;
+    padding: 0 16px;
+}
+
+/* Form Inputs */
+
+.input {
+    border: 1px solid #DEDFE0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    height: 30px;
+    margin-right: 7px;
+    margin-left: 7px;
+    padding: 10px;
+}
+
+.dropdown {
+    border-radius: 5px;
+    border: 1px solid #DEDFE0;
+    background: white;
+    font-size: 14px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.button {
+    background: #7B4205;
+    border-radius: 10px;
+    border-bottom: 2px solid #396684;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 8px;
+    transition: background .3s ease;
+}
+
+.button:hover {
+    background: #DC7B51;
+}
+
+.button-secondary {
+    background: #B17F4A;
+    border-bottom: 2px solid #717171;
+}
+
+.button-secondary:hover {
+    background: #6E6E6E;
+}
+
+/* Note editor */
+
+.title-input {
+    border: 1px solid #DEDFE0;
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+    margin: 24px 0;
+    padding: 8px
+    width: 100%;
+}
+
+.body-input {
+    border: 1px solid #DEDFE0;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    margin: 24px 0;
+    min-height: 150px;
+    padding: 8px
+    width: 100%;
+}
+
+/* Note List Item */
+
+.list-item {
+    text-decoration: none;
+    color: #333333;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    margin: 16px 0;
+    padding: 16px;
+    display: block;
+    transition: background .3s ease;
+}
+
+.list-item:hover {
+    background: #eeeeee;
+}
+
+.list-item_title {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.list-item_subtitle {
+    color: #666;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.empty-message {
+    text-align: center;
+    margin: 32px 0;
+}

@@ -1,0 +1,94 @@
+/* ===================================================================
+  MESSAGES
+=================================================================== */
+.message {
+  padding: 1em 1.618em;
+  line-height: $base-line-height + px;
+  background-color: $color-gray;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: $gutter;
+  border-left: 5px solid;
+}
+
+
+/* Message Warning
+------------------------------------------------------------------- */
+.message--warning {
+  background-color: $color-warning;
+
+  &, a {
+    color: $color-warning-text;
+  }
+}
+
+
+/* Message Success
+------------------------------------------------------------------- */
+.message--success {
+  background-color: $color-success;
+
+  &, a {
+    color: $color-success-text;
+  }
+}
+
+
+/* Message Error
+------------------------------------------------------------------- */
+.message--error {
+  background-color: $color-error;
+
+  &, a {
+    color: $color-error-text;
+  }
+}
+
+
+/* Message Info
+------------------------------------------------------------------- */
+.message--info {
+  background-color: $color-info;
+
+  &, a {
+    color: $color-info-text;
+  }
+}
+
+
+
+/* ===================================================================
+  WOOCOMMERCE MESSAGE
+=================================================================== */
+.woocommerce-error {
+  list-style: none;
+  margin-left: 0;
+}
+
+.woocommerce-error {
+  @extend .message;
+  @extend .message--error;
+}
+
+.woocommerce-message {
+  @extend .message;
+  @extend .message--info;
+}
+
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+  .wc-forward {
+    float: right;
+    letter-spacing: 1px;
+    padding: 0;
+    border: 0;
+    background: none;
+    padding-left: 1em;
+    border-left: 1px solid rgba(#fff, .25);
+
+    &:hover {
+      background: none;
+    }
+  }
+}

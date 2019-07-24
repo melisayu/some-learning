@@ -1,0 +1,28 @@
+/* ===================================================================
+  BUTTONS
+=================================================================== */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  font-weight: $font-weight-medium;
+  border: 2px solid transparent;
+  @include font-size($base-font-size);
+  line-height: em($base-line-height);
+  background-color: $color-gray-2;
+  color: $color-text;
+  // border-radius: 8px;
+  appearance: none;
+  @include antialiased();
+
+  @include hover() {
+    color: $color-text;
+    background-color: darken($color-gray-2, 5%);
+    text-decoration: none;
+  }
+
+  .disabled,
+  &:disabled {
+    opacity: 0.2;
+  }
+}

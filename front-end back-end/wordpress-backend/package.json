@@ -1,0 +1,49 @@
+{
+  "name": "hubton-starter",
+  "version": "1.0.0",
+  "description": "This is WordPress starter theme.",
+  "private": true,
+  "scripts": {
+    "start": "npx webpack-dashboard -- webpack --config webpack.dev.js --colors --watch --progress",
+    "build": "npx webpack --config webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/hubtonindonesia/hubton-starter.git"
+  },
+  "keywords": [],
+  "author": "Arif Widipratomo",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/hubtonindonesia/hubton-starter#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.3",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^2.1.0",
+    "cssnano": "^4.1.8",
+    "dotenv": "^6.2.0",
+    "file-loader": "^3.0.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "resolve-url-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dashboard": "^2.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.2.0"
+  }
+}

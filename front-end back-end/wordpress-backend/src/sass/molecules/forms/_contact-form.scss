@@ -1,0 +1,100 @@
+/* ===================================================================
+  CONTACT FORM
+=================================================================== */
+.form-row {
+  margin-bottom: 30px;
+
+  @include for-tablet-landscape-up {
+    margin-bottom: 60px;
+  }
+
+  > br {
+    display: none;
+  }
+}
+
+.form-row span.wpcf7-not-valid-tip {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 5px 10px;
+}
+
+.alert,
+div.wpcf7-response-output {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.alert-success,
+.wpcf7-mail-sent-ok {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+.alert-danger,
+div.wpcf7-validation-errors {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+.contact-form .ajax-loader {
+  background: #fff;
+  vertical-align: middle;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.contact-form {
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  textarea,
+  .select-field {
+    padding: 0 0 10px 0;
+    border: 0;
+    border-bottom: 2px solid $color-text;
+    background: none;
+    line-height: em(27, 18);
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  input[type="date"] {
+    line-height: 1;
+  }
+
+  .select-field {
+    padding-bottom: 0;
+
+    &:after {
+      content: "";
+      height: 0;
+      width: 0;
+      border-width: 6px 4px;
+      border-style: solid;
+      border-color: #111 transparent transparent;
+      right: 0;
+      margin-top: -6px;
+    }
+  }
+
+  .select-field select {
+    @include font-size(18);
+    padding: 0 0 10px 0;
+    line-height: em(27, 18);
+    color: #aaa;
+  }
+
+  .select-field .selected {
+    color: $color-text;
+  }
+}
